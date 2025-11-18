@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "one" {
-  bucket = "hemanth8877.monobucket"
+  bucket = "hemanth998877.monobucket"
 }
 
 resource "aws_s3_bucket_ownership_controls" "two" {
@@ -22,11 +22,5 @@ versioning_configuration {
 status = "Enabled"
 }
 }
-terraform {
-backend "s3" {
-region = "us-east-1"
-bucket = "hemanth8877.monobucket"
-key = "prod/terraform.tfstate"
-}
-}
+
 
